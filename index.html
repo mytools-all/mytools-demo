@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo-hello</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 24px;
+        font-family: "Microsoft YaHei", system-ui, sans-serif;
+        background: #ffffff;
+        color: #1f2937;
+      }
+      h1 {
+        font-size: 18px;
+        margin: 0 0 4px;
+      }
+      p {
+        font-size: 13px;
+        color: #6b7280;
+        margin: 0 0 16px;
+      }
+      .row {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 12px;
+      }
+      button {
+        border: 1px solid #e5e7eb;
+        background: #f9fafb;
+        border-radius: 6px;
+        padding: 7px 14px;
+        font-size: 13px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #f3f4f6;
+      }
+      pre {
+        background: #f3f4f6;
+        border-radius: 6px;
+        padding: 10px;
+        font-size: 12px;
+        min-height: 18px;
+        white-space: pre-wrap;
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>demo-hello</h1>
+    <p>演示 MyTools 能力调用；系统操作按宿主策略请求授权。</p>
+
+    <div class="row">
+      <button id="copy">复制文本</button>
+      <button id="open">打开链接</button>
+      <button id="path">读取主目录</button>
+    </div>
+
+    <pre id="output">等待操作…</pre>
+
+    <script>
+      const output = document.getElementById('output');
+      async function run(id, args) {
+        try {
+          if (!window.mytools) throw new Error('请从 MyTools 打开此插件');
+          const value = await window.mytools.call(id, args);
+          output.textContent = value === undefined || value === null ? '操作完成' : typeof value === 'string' ? value : JSON.stringify(value, null, 2);
+        } catch (error) {
+          output.textContent = '调用失败：' + error.message;
+        }
+      }
+      document.getElementById('copy').onclick = () => run('clipboard.write', { text: 'hello from demo-hello' });
+      document.getElementById('open').onclick = () => run('shell.open', { url: 'https://github.com/mytools-all/mytools' });
+      document.getElementById('path').onclick = () => run('system.path', { name: 'home' });
+    </script>
+  </body>
+</html>
