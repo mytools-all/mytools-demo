@@ -6,7 +6,7 @@ MyTools 统一示例：复制和读取剪贴板、打开链接、读取系统路
 
 ## 安装
 
-npm 重新发布尚在等待撤包冷却期，目前可下载源码并安装本地目录。发布完成后，在 MyTools 插件管理的 npm 安装入口输入 `@mytools-all/mytools-demo@0.1.1`。也可以下载本仓库，在开发者页面选择“安装本地目录”。
+在 MyTools 插件管理的 npm 安装入口输入 `@mytools-all/mytools-demo@0.1.1`。也可以下载本仓库，在开发者页面选择“安装本地目录”。
 
 ## 开发
 
@@ -21,3 +21,5 @@ npm 重新发布尚在等待撤包冷却期，目前可下载源码并安装本�
 项目代码使用 MIT；随附的第三方代码遵循各自随附的许可证。
 
 此插件已合并原 mytools-hello 的读取剪贴板和应用列表演示，统一维护五项示例功能。涉及权限的调用仍由宿主确认。
+
+发布状态以 [项目索引](https://github.com/mytools-all/mytools-home/blob/main/plugins/database.json) 的 published 字段为准；未发布时请先安装源码目录。
