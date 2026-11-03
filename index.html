@@ -24,6 +24,7 @@
       }
       .row {
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 12px;
       }
@@ -55,8 +56,10 @@
 
     <div class="row">
       <button id="copy">复制文本</button>
+      <button id="read">读取剪贴板</button>
       <button id="open">打开链接</button>
       <button id="path">读取主目录</button>
+      <button id="apps">列出应用</button>
     </div>
 
     <pre id="output">等待操作…</pre>
@@ -73,6 +76,8 @@
         }
       }
       document.getElementById('copy').onclick = () => run('clipboard.write', { text: 'hello from mytools-demo' });
+      document.getElementById('read').onclick = () => run('clipboard.read', {});
+      document.getElementById('apps').onclick = () => run('app.list', {});
       document.getElementById('open').onclick = () => run('shell.open', { url: 'https://github.com/mytools-all/mytools' });
       document.getElementById('path').onclick = () => run('system.path', { name: 'home' });
     </script>

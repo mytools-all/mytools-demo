@@ -1,7 +1,7 @@
 {
   "name": "mytools-demo",
   "pluginName": "MyTools Demo",
-  "description": "测试插件：演示 MyTools 桥接（复制文本 / 打开链接 / 读取系统路径）",
+  "description": "MyTools 统一示例：复制和读取剪贴板、打开链接、读取系统路径、列出应用。",
   "author": "MyTools",
   "version": "0.1.0",
   "main": "index.html",
@@ -21,7 +21,9 @@
   "apiVersion": 1,
   "capabilities": [
     "clipboard.write",
+    "clipboard.read",
     "shell.open",
-    "system.path"
+    "system.path",
+    "app.list"
   ]
 }
