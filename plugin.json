@@ -3,7 +3,7 @@
   "pluginName": "MyTools Demo",
   "description": "MyTools 统一示例：复制和读取剪贴板、打开链接、读取系统路径、列出应用。",
   "author": "MyTools",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.html",
   "icon": "icon.svg",
   "pluginType": "app",

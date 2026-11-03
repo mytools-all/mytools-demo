@@ -1,6 +1,6 @@
 {
   "name": "@mytools-all/mytools-demo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MyTools 统一示例：复制和读取剪贴板、打开链接、读取系统路径、列出应用。",
   "type": "module",
   "main": "index.html",
