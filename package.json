@@ -1,5 +1,5 @@
 {
-  "name": "@mytools-all/demo-hello",
+  "name": "@mytools-all/mytools-demo",
   "version": "0.1.0",
   "description": "测试插件：演示 MyTools 桥接（复制文本 / 打开链接 / 读取系统路径）",
   "type": "module",
@@ -8,11 +8,11 @@
   "author": "MyTools Contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mytools-all/demo-hello.git"
+    "url": "git+https://github.com/mytools-all/mytools-demo.git"
   },
-  "homepage": "https://github.com/mytools-all/demo-hello#readme",
+  "homepage": "https://github.com/mytools-all/mytools-demo#readme",
   "bugs": {
-    "url": "https://github.com/mytools-all/demo-hello/issues"
+    "url": "https://github.com/mytools-all/mytools-demo/issues"
   },
   "publishConfig": {
     "access": "public",

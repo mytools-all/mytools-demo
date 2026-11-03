@@ -1,6 +1,6 @@
 {
-  "name": "demo-hello",
-  "pluginName": "demo-hello",
+  "name": "mytools-demo",
+  "pluginName": "MyTools Demo",
   "description": "测试插件：演示 MyTools 桥接（复制文本 / 打开链接 / 读取系统路径）",
   "author": "MyTools",
   "version": "0.1.0",
@@ -12,7 +12,9 @@
       "code": "demo",
       "explain": "演示 MyTools bridge",
       "cmds": [
-        "demo-hello"
+        "mytools-demo",
+        "demo",
+        "示例插件"
       ]
     }
   ],

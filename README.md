@@ -1,4 +1,4 @@
-# demo-hello
+# mytools-demo
 
 测试插件：演示 MyTools 桥接（复制文本 / 打开链接 / 读取系统路径）
 
@@ -6,7 +6,7 @@
 
 ## 安装
 
-在 MyTools 插件管理的 npm 安装入口输入 `@mytools-all/demo-hello@0.1.0`。也可以下载本仓库，在开发者页面选择“安装本地目录”。
+在 MyTools 插件管理的 npm 安装入口输入 `@mytools-all/mytools-demo@0.1.0`。也可以下载本仓库，在开发者页面选择“安装本地目录”。
 
 ## 开发
 

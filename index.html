@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>demo-hello</title>
+    <title>mytools-demo</title>
     <style>
       html,
       body {
@@ -50,7 +50,7 @@
     </style>
   </head>
   <body>
-    <h1>demo-hello</h1>
+    <h1>mytools-demo</h1>
     <p>演示 MyTools 能力调用；系统操作按宿主策略请求授权。</p>
 
     <div class="row">
@@ -72,7 +72,7 @@
           output.textContent = '调用失败：' + error.message;
         }
       }
-      document.getElementById('copy').onclick = () => run('clipboard.write', { text: 'hello from demo-hello' });
+      document.getElementById('copy').onclick = () => run('clipboard.write', { text: 'hello from mytools-demo' });
       document.getElementById('open').onclick = () => run('shell.open', { url: 'https://github.com/mytools-all/mytools' });
       document.getElementById('path').onclick = () => run('system.path', { name: 'home' });
     </script>
