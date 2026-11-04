@@ -6,7 +6,7 @@ MyTools 统一示例：复制和读取剪贴板、打开链接、读取系统路
 
 ## 安装
 
-当前合并版 0.1.1 尚未确认重新发布，请先下载源码，运行 `npm pack`，在 MyTools 开发者页面选择“安装插件包（.zip / .tgz）”；也可将完整源码目录放到“打开插件目录”指向的根目录后“重新扫描”。只有索引 published:true 后才使用 `@mytools-all/mytools-demo@0.1.1` 进行 npm 安装。
+在 MyTools 插件商店搜索 MyTools Demo，或在开发者页面的 npm 安装入口输入 `@mytools-all/mytools-demo@0.1.1`。源码开发可运行 `npm pack` 后安装生成的 tgz；也可将完整源码目录放到“打开插件目录”指向的根目录后“重新扫描”。
 
 ## 开发
 
